@@ -15,7 +15,7 @@ y1=0
 
 while True:
     success, img=cap.read()
-    img=cv2.flip(img,1)
+    img=cv2.flip(img,1) #ignore.. not needed
     img_height,img_width,c=img.shape
     imgRGB = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
     output=detector.process(imgRGB)
